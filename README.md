@@ -25,7 +25,7 @@
 	* `mount -o noatime,nodiratime,compress=zstd,space_cache,ssd,subvol=@home /dev/mapper/smoker /mnt/home`
 	* `mount /dev/sdb1 /mnt/var`
 Essas opções trazem recursos que melhoram a vida útil do seu sdd, assim como o algoritimo de compressão zstd que possui uma harmonia entre taxa de compressão e velocidade.
-	* swapon /dev/sda2
+	* `swapon /dev/sda2`
 6. Monte o EFI
 	* `mount /dev/nvme0n1p2 /mnt/boot`
 

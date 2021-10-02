@@ -1,7 +1,6 @@
 # instalacao-arch
-* localectl list-keymaps |grep pt
-loadkeys br-abnt2
-loadkeys 
+* `localectl list-keymaps |grep br`
+  `loadkeys br-abnt2`
 1. particione os discos, efi, swp, hd e ssd com fdisk ou utilitário preferencial
 	* Aqui irei usar 1 hd (var, swp), 1 ssd (/, home, efi) 
 	* `fdisk -l` para saber as partições criadas

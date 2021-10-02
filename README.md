@@ -59,10 +59,9 @@ Essas opções trazem recursos que melhoram a vida útil do seu sdd, assim como 
 
 14. crie a senha do root
 	* `passwd`
-u	
 15. De um nome ao seu pc e altere o arquivo hosts
 	* `echo "arch" > /etc/hostname`
-	* ``` vim /etc/hosts
+	``` vim /etc/hosts
 	127.0.0.1	localhost
 	::1		localhost
 	127.0.1.1	arch.localdomain	arch
@@ -75,9 +74,9 @@ u
 17. Ambiente gráfico
 	* KDE plasma `pacman -S plasma-desktop sddm plasma-wayland-session firefox dolphin konsole`
 	* `sudo systemctl enable sddm`
-19. Crie um usuário
+18. Crie um usuário
 	* `adduser -m jeitinhobrasileiro`
-18. Backup e snapshot com timeshift
+19. Backup e snapshot com timeshift
 	* `yay timeshift`
 	* `systemctl edit grub-btrfs.path`
 	``` 
@@ -96,24 +95,24 @@ u
 	``` descomente e jogue linha acima
 	* cuidado com o fstab ao realizar os rollbacks
 
-19. segurança
-	* `pacman -S clamav` antivirus
-	* `freshclam`
-	* `clamscan`
+20. segurança
+	1. `pacman -S clamav` antivirus
+		* `freshclam`
+		* `clamscan`
 	
-	* `pacman -S rkhunter`checa rootkits e vulnerabilidades
-	* `rkhunter --check`
+	2. `pacman -S rkhunter`checa rootkits e vulnerabilidades
+		* `rkhunter --check`
 
-	* `yay tiger` linux secure auditting tool
-	* `tiger`
-	* `cat /var/log/tiger`
+	3. `yay tiger` linux secure auditting tool
+		* `tiger`
+		* `cat /var/log/tiger`
 
-	* `pacman -S ufw` firewall
-	* `sudo ufw enable`
-	* `ufw default allow outgoing`
-	* `ufw default deny incoming`
+	4. `pacman -S ufw` firewall
+		* `sudo ufw enable`
+		* `ufw default allow outgoing`
+		* `ufw default deny incoming`
 	
-	* `passwd -l root` previne que o usuário root logue no sistema #faça isso apenas quando criar uma conta com sudoer. `visudo`
+	5. `passwd -l root` previne que o usuário root logue no sistema #faça isso apenas quando criar uma conta com sudoer. `visudo`
 		
 	
 ~                                        
